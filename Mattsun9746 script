@@ -1,0 +1,31 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "MATTSUN9746 SCRIPT", HidePremium = false, Introtext = "Loading script...", SaveConfig = true, ConfigFolder = "Loading script..."})
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Made By mattsun9746",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Tab2 = Window:MakeTab({
+	Name = "Gamepasses",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = "Script section"
+})
+local Section = Tab2:AddSection({
+	Name = "Gamepass section"
+})
+Tab:AddButton({
+	Name = "Julhub",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/JulHubz/JulHub/main/JulHub"))()
+  	end    
+})
+OrionLib:Init()
